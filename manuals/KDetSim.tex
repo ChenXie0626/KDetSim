@@ -1,0 +1,125 @@
+%
+% A simple LaTeX template for Books
+%  (c) Aleksander Morgado <aleksander@es.gnu.org>
+%  Released into public domain
+%
+
+\documentclass{book}
+\usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+
+
+
+\begin{document}
+
+
+\pagestyle{empty}
+%\pagenumbering{}
+% Set book title
+\title{\textbf{KDetSim - a simple way to simulate detectors}}
+% Include Author name and Copyright holder name
+\author{Gregor Kramberger, Jo\v zef Stefan Institute, Slovenia}
+
+
+
+% 1st page for the Title
+%-------------------------------------------------------------------------------
+\maketitle
+
+
+% 2nd page, thanks message
+%-------------------------------------------------------------------------------
+\thispagestyle{empty}
+\thanks{Thanks to many colleaques who helped to make it happen.}
+\newpage
+
+
+
+% General definitions for all Chapters
+%-------------------------------------------------------------------------------
+
+% Define Page style for all chapters
+\pagestyle{fancy}
+% Delete the current section for header and footer
+\fancyhf{}
+% Set custom header
+\lhead[]{\thepage}
+\rhead[\thepage]{}
+
+% Set arabic (1,2,3...) page numbering
+\pagenumbering{arabic}
+
+% Set double spacing for the text
+\doublespacing
+
+
+
+% Not enumerated chapter
+%-------------------------------------------------------------------------------
+\chapter*{Preface}
+
+The semiconductor particle detectors are a must in most of modern high energy
+experiments, X-rays and synchrotron imaging application, Space missions etc. 
+
+
+
+% If the chapter ends in an odd page, you may want to skip having the page
+%  number in the empty page
+\newpage
+\thispagestyle{empty}
+
+
+
+% First enumerated chapter
+%-------------------------------------------------------------------------------
+\chapter{Introduction}
+
+The state of the art TCAD tools for simulation of semiconductor device properties 
+are vital for successful device development and process simulation at different 
+semiconductor detector processing/designing facilities. They are commercialy developed
+for markets of which high energy physics community is not the most important part. On the other 
+hand the requirements for high energy physics application of these tools are in a sense 
+unique and not so well covered. 
+
+Application of semiconductor detectors in high radiation 
+fields invevitably leads to different levels of radiation damage. Althogh many efforts have
+been spent in the past to simulate the effects of deep traps to detector operation, 
+at present we don't know the set of traps that would entirely reproduce the changes in 
+device operation properties, such as electric field profile, charge collection efficiency and leakage 
+current. A single trap is defined by 6 parameters (electron,hole capture cross-sections, 
+energy level, concentration and type). Moreover the SRH may not be the only physics that governes the
+device behavior. Accuracy of models such as trapp-assisted tunneling in numerical calculations 
+not only adds to complexity, but also renders the convergence of equation solver problematic.
+
+TCAD tools are also not well suited for Monte Carlo simulation, bread and butter of 
+high energy physics simulations. They are ofter required for e.g. detection efficiency studies, 
+position resolution etc. Although with some effort one can generate different initial 
+charge distribution deposited by ionizing particle or light pulse, it is very demanding to simulate 
+large multi-electrode structures.
+ 
+
+\chapter{Physics basics}
+Mama mia
+
+\chapter{Calculation of the field}
+adsad
+\chapter{Classes}
+sdasda
+\chapter{KDetector}
+dasdas
+\chapter{Examples}
+
+% Last pages for ToC
+%-------------------------------------------------------------------------------
+\newpage
+% Include dots between chapter name and page number
+\renewcommand{\cftchapdotsep}{\cftdotsep}
+%Finally, include the ToC
+\tableofcontents
+
+\end{document}
+
+

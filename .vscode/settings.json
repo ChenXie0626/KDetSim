@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "SiDriftExample.C": "cpp",
+        "TestStripDetector_1.C": "cpp",
+        "TestStripDetector_1a.C": "cpp",
+        "Test3D.C": "cpp",
+        "Test3D_2.C": "cpp",
+        "Test3D_3.C": "cpp",
+        "SiDriftExample_1.C": "cpp",
+        "TestPad_1.C": "cpp",
+        "TestDetector_1.C": "cpp",
+        "PixelLandau.C": "cpp",
+        "pad2D.C": "cpp"
+    }
+}

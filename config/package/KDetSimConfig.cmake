@@ -1,0 +1,4 @@
+INCLUDE("${CMAKE_CURRENT_LIST_DIR}/KDetSimTargets.cmake")
+
+GET_TARGET_PROPERTY(KDetSimLocation KDetSim INTERFACE_INCLUDE_DIRECTORIES)
+STRING(REGEX REPLACE "/include" "" KDetSimLocation "${KDetSimLocation}")

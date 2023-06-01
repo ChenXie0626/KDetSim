@@ -1,0 +1,4 @@
+{
+gSystem->Load("../lib/KDetSim.sl");
+gROOT->ProcessLine(".x pypad2D.C");
+}
